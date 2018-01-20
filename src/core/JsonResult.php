@@ -62,8 +62,8 @@ class JsonResult
         $this->message = $message;
         return $this;
     }
-    public function addContent($content){
-        $this->content[]=$content;
+    public function addContent(string $key,$value){
+        $this->content[$key]=$value;
     }
 
     /**

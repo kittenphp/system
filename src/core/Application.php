@@ -9,7 +9,6 @@ use kitten\system\config\AppConfig;
 use kitten\system\providers\ExceptionServiceProvider;
 use kitten\system\providers\MiddlewareServiceProvider;
 use kitten\system\providers\ResultServiceProvider;
-use Symfony\Component\Debug\Debug;
 use Symfony\Component\Debug\ExceptionHandler;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -93,8 +92,8 @@ class Application
         error_reporting(E_ALL ^ E_NOTICE);
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
-        Debug::enable();
-        ExceptionHandler::register();
+//        Debug::enable();
+//        ExceptionHandler::register();
     }
 
     protected function init()
